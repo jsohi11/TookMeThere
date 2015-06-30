@@ -1,0 +1,23 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+    overflow:hidden;
+    background-image: url(world_dot_map.png);
+    height: 800px; 
+    margin-top: -20px; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    overflow-y: hidden; 
+    overflow-x: hidden;
+}
+
+.valign {
+    padding-top: 235px;
+}
+
+.navbar-inverse {
+	background-color: #09091A;
+	border-color: #09091A;
+}

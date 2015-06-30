@@ -1,0 +1,2 @@
+module CountriesVisitedHelper
+end

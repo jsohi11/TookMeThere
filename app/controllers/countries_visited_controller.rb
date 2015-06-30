@@ -1,0 +1,2 @@
+class CountriesVisitedController < ApplicationController
+end

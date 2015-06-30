@@ -1,0 +1,38 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+// Making h1 text white
+
+h1, h2, h3, h4, p { 
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+ }
+
+ //Styling for buttons on the static homepage
+
+.btn-home {
+  color: white;
+  background-color: #1fbad6;
+  border-color: #1fbad6;
+}
+
+.btn-home:focus,
+.btn-home.focus {
+  color: white;
+  background-color: #1fbad6;
+  border-color: #1fbad6;
+}
+.btn-home:hover {
+  color: white;
+  background-color: #1fbad6;
+  border-color: #1fbad6;
+}
+.btn-home:active,
+.btn-home.active,
+.open > .dropdown-toggle.btn-primary {
+  color: white;
+  background-color: #1fbad6;
+  border-color: #1fbad6;
+}
+
