@@ -1,2 +1,0 @@
-class CountriesVisitedController < ApplicationController
-end

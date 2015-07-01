@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  country_name: MyString
+  visisted: false
+  country_badge_visisted: MyString
+  country_badge_not_visited: MyString
+
+two:
+  country_name: MyString
+  visisted: false
+  country_badge_visisted: MyString
+  country_badge_not_visited: MyString

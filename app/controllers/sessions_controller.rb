@@ -32,7 +32,7 @@ class SessionsController < ApplicationController
 	      redirect_to root_url, notice: "Signed in!"
 	    else
 	      # No user associated with the identity so we need to create a new one
-	      redirect_to new_user_url, notice: "Please finish registering"
+	      redirect_to about_url, notice: "Please finish registering"
 	    end
   	end
   end

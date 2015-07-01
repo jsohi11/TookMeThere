@@ -13,6 +13,7 @@ gem 'bootstrap-sass', '~> 3.3.5'
 
 gem 'omniauth'
 gem 'omniauth-uber'
+gem 'uber-ruby', require: 'uber'
 gem 'figaro'
 
 
