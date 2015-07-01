@@ -15,6 +15,7 @@ gem 'omniauth'
 gem 'omniauth-uber'
 gem 'uber-ruby', require: 'uber'
 gem 'figaro'
+gem 'rails_12factor', group: :production
 
 
 group :development, :test do
