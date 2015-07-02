@@ -21,3 +21,26 @@ body {
 	background-color: #09091A;
 	border-color: #09091A;
 }
+
+
+// Make containers difference sizes
+
+.col-md-7{
+  position: relative;
+  height: 800px;
+  padding-right: 0px;
+  padding-left: 15px;
+  padding-top: 15px;
+  background-image: url(paper_@2X.png);
+  background-repeat: repeat;
+}
+
+.col-md-5{
+  position: relative;
+  height: 800px;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #C0C0C8;
+}
+
+
