@@ -27,7 +27,6 @@ class Authorization < ActiveRecord::Base
   end
 
   def self.create_with_omniauth(auth)
-    create(uid: auth['uid'], provider: auth['provider'])
     case auth['provider']
     when "uber"
       create(uid: auth['uid'], provider: auth['provider'],  picture: auth['info']['picture'], email: auth['info']['email'], first_name: auth['info']['first_name'], last_name: auth['info']['last_name'], oauth_token: auth['credentials']['token'], oauth_expires_at: auth['credentials']['expires_at'], expires: auth['credentials']['expires'])
@@ -37,12 +36,4 @@ class Authorization < ActiveRecord::Base
       puts "nothing"
     end
   end
-
-  def uber_auth(auth)
-    create(uid: auth['uid'], provider: auth['provider'],  picture: auth['info']['picture'], email: auth['info']['email'], first_name: auth['info']['first_name'], last_name: auth['info']['last_name'], oauth_token: auth['credentials']['token'], oauth_expires_at: auth['credentials']['expires_at'], expires: auth['credentials']['expires'])
-  end
- 
-  def google_auth(auth)
-  end
-	
 end

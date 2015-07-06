@@ -39,10 +39,6 @@ class SessionsController < ApplicationController
       end
     end
   end
-  
-  # def create
-  # 	render :text => request.env['omniauth.auth'].to_yaml
-  # end
 
   def destroy
     self.current_user = nil

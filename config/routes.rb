@@ -7,6 +7,6 @@ Rails.application.routes.draw do
   root 'static_pages#home'
 
  match '/auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
- match '/logout', to: 'sessions#destroy', via: [:get, :post]
+ match '/signout', to: 'sessions#destroy', via: [:get, :post]
 
 end

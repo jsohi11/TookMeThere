@@ -36,5 +36,30 @@ h1, h2, h3, h4, p {
   border-color: #1fbad6;
 }
 
+// Adding the option for an opaque panel
+
+.panel-transparent {
+    background: none;
+    border: none;
+    padding: 20px;
+}
+
+.panel-transparent .panel-heading{
+  background: #09091A !important;
+  border: #09091A !important;
+  color: #9d9d9d !important;
+}
+
+.panel-transparent .panel-body{
+    background: rgba(225, 225, 225, 0.2)!important;
+    max-height: 580px;
+    min-height: 580px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.panel-transparent h1, h2, h3{
+    color: #ffffff !important;
+}
 
 

@@ -12,7 +12,12 @@ class User < ActiveRecord::Base
 	has_many :authorizations 
 
 	def self.create_with_omniauth(auth)
-		name = auth['info']['first_name']
-    	create(name: name)
+		uid = auth['uid']
+		first_name = auth['info']['first_name']
+		last_name = auth['info']['last_name']
+		picture = auth['info']['picture']
+		email = auth['info']['email']
+    	create(uid: uid, first_name: first_name, last_name: last_name, picture: picture, email: email)
   	end
 end
+
