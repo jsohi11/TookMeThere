@@ -21,8 +21,12 @@
           ['Country',   'Cities'],
           ['United States', 'Madison, San Francisco, Los Angeles'],
           ['France', 'Paris'],
-          ['The Netherlands', 'Amsterdam'],
-          ['Brazil', 'Rio de Janiro'],
+          ['South Africa', 'Cape Town'],
+          ['United Kingdom', 'London'],
+          ['India', 'Chandigardh'],
+          ['Mexico', 'Mexico City'],
+          ['Australia', 'Sydney'],
+          ['China', 'Beijing'],
         ]);
 
         var options = {
@@ -44,25 +48,28 @@
 <div class="row">
   <div class="col-md-7"><div id="map-canvas"></div>
   <div class="row">
-    <div class="col-md-3">
-        <%= image_tag(current_user.picture, class: 'img-circle', :width => 100, :height => 100, :style => "margin-top:35px; margin-left:20px;") %>
+    <div class="col-md-4">
+        <p align="center"><%= image_tag(current_user.picture, class: 'img-circle', :width => 100, :height => 100, :style => "margin-top:25px;",) %></p>        
+        <p align="center" class="stats-labels-small"><%= current_user.first_name %></p>
 </div>
-<div class="col-md-2">
-  Signed in as <%= current_user.email %>!
+<div class="col-md-3">
+  <p align="center" class="stats">5</p>
+  <p align="center" class="stats-labels">COUNTRIES</p>
 
 </div>
-<div class="col-md-2">
-
+<div class="col-md-3">
+<p align="center" class="stats">18</p>
+<p align="center" class="stats-labels">CITIES</p>
 </div>
 </div>
     </div>
   <div class="col-md-5">
 
-    <div class="row">
+<!--     <div class="row">
     <img src="http://www.talentthinktank.com/wp-content/uploads/2013/04/icon-twitter.png" height="30px" width="30px" class="pull-right" style="margin-right:20px">
     <img src="http://www.owlandpussycatsalon.com/images/facebook-icon2.png" height="30px" width="30px" class="pull-right">
 </div>
-
+ -->
 <div class="panel panel-default panel-transparent">
   <div class="panel-heading">
     <h3 class="panel-title" align="center">Uber #TookMeThere</h3>
@@ -70,41 +77,40 @@
   <div class="panel-body">
 
 <div class="row">
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
+    <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="125px" height="125x"></div>
+    <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_france_ridden.png" class="img-circle" width="125px" height="125px"></div>
+    <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_south_africa_ridden.png" class="img-circle" width="125px" height="125px"></div>
 </div>
 
 <div class="row">
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
+  <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_uk_ridden.png" class="img-circle" width="125px" height="125x"></div>
+    <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_india_ridden.png" class="img-circle" width="125px" height="125px"></div>
+    <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_mexico_ridden.png" class="img-circle" width="125px" height="125px"></div>
 </div>
 
 <div class="row">
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
+  <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_australia_ridden.png" class="img-circle" width="125px" height="125x"></div>
+    <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_china_ridden.png" class="img-circle" width="125px" height="125px"></div>
+    <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_philippines_ridden.png" class="img-circle opaque" width="125px" height="125px"></div>
 </div>
 
 <div class="row">
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
+  <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_canada_ridden.png" class="img-circle opaque" width="125px" height="125x"></div>
+    <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_brazil_ridden.png" class="img-circle opaque" width="125px" height="125px"></div>
+    <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_vietnam_ridden.png" class="img-circle opaque" width="125px" height="125px"></div>
 </div>
 
 <div class="row">
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
-    <div class="col-md-2" style="margin:15px"><img src="/assets/stamp_usa_ridden.png" class="img-circle" width="100px" height="100px"></div>
+  <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_netherlands_ridden.png" class="img-circle opaque" width="125px" height="125x"></div>
+    <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_turkey_ridden.png" class="img-circle opaque" width="125px" height="125px"></div>
+    <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_switzerland_ridden.png" class="img-circle opaque" width="125px" height="125px"></div>
 </div>
 
-
+<div class="row">
+  <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_russia_ridden.png" class="img-circle opaque" width="125px" height="125x"></div>
+    <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_sweden_ridden.png" class="img-circle opaque" width="125px" height="125px"></div>
+    <div class="col-md-2" style="margin:30px"><img src="/assets/stamp_israel_ridden.png" class="img-circle opaque" width="125px" height="125px"></div>
+</div>
 
   </div>
 </div>

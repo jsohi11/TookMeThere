@@ -9,6 +9,26 @@ h1, h2, h3, h4, p {
 	color: white;
  }
 
+ // Styling for stats text
+
+ .stats { 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80px;
+  color: #09091A;
+ }
+
+  .stats-labels { 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #09091A;
+ }
+
+   .stats-labels-small { 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #09091A;
+ }
+
  //Styling for buttons on the static homepage
 
 .btn-home {
@@ -52,14 +72,24 @@ h1, h2, h3, h4, p {
 
 .panel-transparent .panel-body{
     background: rgba(225, 225, 225, 0.2)!important;
-    max-height: 560px;
-    min-height: 560px;
+    max-height: 590px;
+    min-height: 590px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 .panel-transparent h1, h2, h3{
     color: #ffffff !important;
+}
+
+// Make images opaque
+
+.opaque {
+    opacity: 0.4;
+}
+
+.opaque:hover {
+    opacity: 1.0;
 }
 
 
