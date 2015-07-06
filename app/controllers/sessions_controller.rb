@@ -1,7 +1,6 @@
 class SessionsController < ApplicationController
-
-  def create
-    auth = request.env['omniauth.auth']
+    def create
+      auth = request.env['omniauth.auth']
     # Find an identity here
     @authorization = Authorization.find_with_omniauth(auth)
 
@@ -35,7 +34,7 @@ class SessionsController < ApplicationController
         @authorization.user = user
         @authorization.save
         # No user associated with the identity so we need to create a new one
-        redirect_to about_path, notice: "Please finish registering"
+        redirect_to dashboard_path, notice: "Please finish registering"
       end
     end
   end
